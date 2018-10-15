@@ -1,0 +1,15 @@
+/*Universal Styles*/
+
+html {
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
