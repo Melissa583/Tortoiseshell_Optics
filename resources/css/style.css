@@ -21,7 +21,92 @@ body {
   color: white;
   }
 
-  .company img {
+.company .container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+.company img {
     height: 1.5rem;
     padding-right: 1rem;
   }
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+/*Main Banner*/
+
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.headline {
+  position: relative;
+  top: 10rem;
+  background-color: white;
+}
+
+.headline h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+/*Services & Business Info*/
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  height: 8rem;
+}
+
+.service-image {
+  display: flex;
+  width: 3.5rem;
+  padding: 0 6rem;
+}
+
+.description {
+  display: block;
+  text-align: center;
+}
+
+.business-info {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.business-info span {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  width: 10rem;
+}
+
+/*Footer*/
+
+footer {
+  padding: 4rem;
+  background-color: azure;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
