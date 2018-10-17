@@ -62,6 +62,10 @@ body { /*done*/
     padding-right: 2rem;
   }
 
+  .mobile-nav { /*done*/
+    display: none;
+  }
+
 /*Services & Business Info*/
 
 .services {
@@ -85,12 +89,12 @@ body { /*done*/
 .description {
   display: block;
   text-align: center;
-
 }
 
 .business-info { /*done*/
   display: flex;
   padding-bottom: 5rem;
+  justify-content: center;
 }
 
 .info span { /*done*/
@@ -112,6 +116,7 @@ body { /*done*/
   margin-top: 1rem;
 }
 
+
 /*Footer*/
 
 footer .container { /*done*/
@@ -126,4 +131,85 @@ footer img { /*done*/
   height: 1.5rem;
   padding-right: 1rem;
   padding-left: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .company .container {
+    top: 0;
+  }
+
+  .headline {
+    margin-right: 2rem;
+    top: 5rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .headline h1 {
+    font-size: 1.33rem;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .company .container {
+    top: 0;
+  }
+
+  .banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .headline h1 {
+    padding: 1rem auto;
+    font-size: 1rem;
+  }
+
+  .headline {
+    width: 100%;
+
+ }
+
+  .mobile-nav {
+    display: block;
+    text-align: right;
+ }
+
+  nav ul {
+    display: none;
+  }
+
+  .services {
+    margin-top: 3.77rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3.77rem;
+  }
+
+  .description {
+    font-size: 0.77rem;
+  }
+
+  .business-info {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info p {
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  footer p {
+    display: none;
+    text-align: center;
+  }
+
 }
