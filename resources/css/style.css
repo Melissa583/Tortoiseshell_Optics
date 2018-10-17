@@ -1,45 +1,22 @@
 /*Universal Styles*/
 
-html {
+html { /*done*/
   font-size: 18px;
 }
 
-body {
+body { /*done*/
   line-height: 1.4;
   font-family: Helvetica, sans-serif;
 }
 
-.container {
+.container { /*done*/
   max-width: 960px;
   margin: 0 auto;
 }
 
-/*Company Header*/
-
-.company {
-  background-color: cadetblue;
-  color: white;
-  }
-
-.company .container {
-    display: flex;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-
-.company img {
-    height: 1.5rem;
-    padding-right: 1rem;
-  }
-
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
 /*Main Banner*/
 
-.main-banner {
+.banner { /*done*/
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -47,45 +24,76 @@ nav ul {
   height: 30rem;
 }
 
-.headline {
+.headline { /*done-ish*/
   position: relative;
   top: 10rem;
   background-color: white;
+  padding: 1.5rem 5rem;
+  float: right;
 }
 
-.headline h1 {
+.headline h1 { /*done-ish*/
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-  padding: 1.5rem 5rem;
 }
+
+/*Company Header*/
+
+.company .container { /*done*/
+  top: 1rem;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+
+.company img { /*done*/
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  li { /*done*/
+    display: inline-block;
+    padding-right: 2rem;
+  }
 
 /*Services & Business Info*/
 
 .services {
   display: flex;
-  justify-content: space-between;
-  padding-top: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.service {
+  width: 5rem;
   height: 8rem;
+  padding-right: 6rem;
 }
 
 .service-image {
-  display: flex;
+  display: inline-block;
   width: 3.5rem;
-  padding: 0 6rem;
 }
 
 .description {
   display: block;
   text-align: center;
+
 }
 
-.business-info {
-  padding-top: 3rem;
+.business-info { /*done*/
+  display: flex;
   padding-bottom: 5rem;
 }
 
-.business-info span {
+.info span { /*done*/
   font-weight: bold;
   font-size: 1rem;
   background-color: cadetblue;
@@ -94,19 +102,28 @@ nav ul {
   width: 10rem;
 }
 
+.info {
+  width: 35%;
+  margin-top: 3rem;
+  padding-right: 5%;
+}
+
+.info p { /*done*/
+  margin-top: 1rem;
+}
+
 /*Footer*/
 
-footer {
-  padding: 4rem;
-  background-color: azure;
-}
-
-footer .container {
+footer .container { /*done*/
   display: flex;
   align-items: center;
+  background-color: azure;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-footer img {
+footer img { /*done*/
   height: 1.5rem;
   padding-right: 1rem;
+  padding-left: 4rem;
 }
